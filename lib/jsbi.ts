@@ -1937,8 +1937,8 @@ class JSBI extends Array {
     return result;
   }
 
-  static __kMaxLength = 1 << 25;
-  static __kMaxLengthBits = JSBI.__kMaxLength << 5;
+  static __kMaxLength = 1 << 25; // 相当于2的25次方
+  static __kMaxLengthBits = JSBI.__kMaxLength << 5; // 相当于2的30次方
   // Lookup table for the maximum number of bits required per character of a
   // base-N string representation of a number. To increase accuracy, the array
   // value is the actual value multiplied by 32. To generate this table:
