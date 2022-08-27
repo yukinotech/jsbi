@@ -23,9 +23,9 @@ export default [
   {
     input: input,
     plugins: [
-      minify({
-        comments: false,
-      }),
+      // minify({
+      //   comments: false,
+      // }),
     ],
     output: [
       // Create a Node.js-friendly CommonJS build.
@@ -48,9 +48,9 @@ export default [
     input: input,
     plugins: [
       babel(),
-      minify({
-        comments: false,
-      }),
+      // minify({
+      //   comments: false,
+      // }),
     ],
     output: [
       // Create a browser-friendly UMD build.
